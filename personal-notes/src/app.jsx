@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { FormInput, Header, SectionNotes } from "./components";
+import Profile from "./components/profile";
 import style from "./styles/app.module.css";
 import { getInitialData } from "./utils";
 
@@ -19,9 +20,14 @@ function App() {
     <>
       <Header search={query} updateQuery={setQuery} updateNotes={setNotes} />
       <main className={style.main}>
+        <div className={style.notes}>
+        <Profile/>
         <FormInput updateNotes={setNotes} />
+        </div>
+        <div className={style.notes}>
         <SectionNotes label='Active Notes' notes={activeNotes} setNotes={setNotes} />
         <SectionNotes label='Archived Notes' notes={archivedNotes} setNotes={setNotes} />
+        </div>
       </main>
     </>
   );

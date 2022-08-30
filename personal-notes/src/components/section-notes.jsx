@@ -3,7 +3,7 @@ import Card from "./card";
 
 const SectionNotes = ({ label, notes, setNotes }) => {
   return (
-    <section>
+    <section className={style.col_of_notes}>
       <h2 className={style.heading}>{label}</h2>
       {notes.length === 0 ? (
         <p className={style.empty_note}>Tidak ada catatan.</p>

@@ -1,8 +1,16 @@
 .main {
-  padding: 0 12rem;
+  padding: 40px;
   padding-bottom: 7rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
   gap: 3.5rem;
+}
+
+.notes {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  background-color: #f0efeb;
+  border-radius: 10px
 }

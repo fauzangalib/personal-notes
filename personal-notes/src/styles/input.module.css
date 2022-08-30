@@ -1,27 +1,28 @@
 .input {
-  border: 1px solid var(--primary);
+  border: 1px solid black;
   background-color: transparent;
   outline: none;
   border-radius: 0.4rem;
-  color: var(--primary);
+  color: #99999;
   padding: 0.7rem 1rem;
   font-size: 1.1rem;
   font-weight: 500;
   min-width: 340px;
+  margin: 5px;
 }
 
 .input::placeholder {
-  color: var(--light);
+  color: black);
 }
 
 .input[type="search"] {
-  border: 0;
-  border-bottom: 2px solid var(--primary);
-  border-radius: 0;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 .input[type="submit"] {
   cursor: pointer;
+  margin: 5px;
 }
 
 .input[type="submit"]:hover {
@@ -33,4 +34,5 @@
 .textarea {
   height: 10rem;
   resize: none;
+  margin: 5px;
 }
